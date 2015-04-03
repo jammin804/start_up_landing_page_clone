@@ -85,12 +85,24 @@ div
   width: 60.625rem; /*970px / 16px*/
   height: 4.375rem; /*70px / 16px*/
   margin: 0 auto;
+  padding: 0px 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.logo
+.top-navigation > .logo
 {
-  margin-left: 0.875rem;/*14px / 16px*/
   height: 4.375rem;
 }
+.links
+{
+  float: right;
+}
+.links > li
+{
+  display: inline-block;
+}
+/*Intro Image*/
 .intro
 {
   position: relative;
