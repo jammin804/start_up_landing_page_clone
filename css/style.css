@@ -68,7 +68,27 @@ div
   width: 6.25em; /*100px / 16px*/
   height: 6.25em; /*100px / 16px*/
 }
-/*--Navigation--*/
+
+/***************
+*              *
+*    Fonts     *
+*              *
+****************/
+
+.links
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #838994;
+  letter-spacing: 0.03em;
+}
+
+/***************
+*              *
+*  Navigation  *
+*              *
+****************/
+
 .header
 {
   position: fixed;
@@ -90,17 +110,34 @@ div
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.top-navigation > .logo
+.logo
 {
-  height: 4.375rem;
+  height: 70px;
 }
 .links
 {
   float: right;
+  margin-top: 25px;
 }
 .links > li
 {
   display: inline-block;
+  margin-left: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links > .active
+{
+  color: #4c5058;
+  font-weight: 600;
+}
+
+.links > li:hover
+{
+  color: #4c5058;
+  cursor: pointer;
+  -webkit-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
 }
 /*Intro Image*/
 .intro
