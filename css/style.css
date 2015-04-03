@@ -68,11 +68,23 @@ div
   width: 6.25em; /*100px / 16px*/
   height: 6.25em; /*100px / 16px*/
 }
+/*--Navigation--*/
 .header
 {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.top-navigation
+{
+  background-color: #fff;
+}
+.top-navigation > .content
+{
+  border: 1px solid #000;
+  width: 60.625rem; /*970px / 16px*/
+  height: 4.375rem; /*70px / 16px*/
+  margin: 0 auto;
 }
 .intro
 {
