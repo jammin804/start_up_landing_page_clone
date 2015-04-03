@@ -86,6 +86,11 @@ div
   height: 4.375rem; /*70px / 16px*/
   margin: 0 auto;
 }
+.logo
+{
+  margin-left: 0.875rem;/*14px / 16px*/
+  height: 4.375rem;
+}
 .intro
 {
   position: relative;
