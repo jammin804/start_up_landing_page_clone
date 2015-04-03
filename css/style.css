@@ -55,7 +55,7 @@ table {
 
 /***************
 *              *
-*     General  *
+*    General   *
 *              *
 ****************/
 
@@ -66,6 +66,12 @@ div {
   border: 1px solid Chocolate;
   height: 6em;
 }
-header {
-
+.header {
+  margin-bottom: 0.3125em;
+}
+.intro {
+  margin-bottom: 50%;
+}
+.feat {
+  margin-bottom: ;
 }
