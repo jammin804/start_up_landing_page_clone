@@ -59,19 +59,38 @@ table {
 *              *
 ****************/
 
-body {
+body
+{
   background-color: LightGray;
 }
-div {
+div
+{
   border: 1px solid Chocolate;
-  height: 6em;
+  width: 6.25em; /*100px / 16px*/
+  height: 6.25em; /*100px / 16px*/
 }
-.header {
-  margin-bottom: 0.3125em;
+.header
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.intro {
-  margin-bottom: 50%;
+.intro
+{
+  position: relative;
+  width: 100%;
+  height: 615px;
+  top: 100px;
 }
-.feat {
-  margin-bottom: ;
+.feat
+{
+  position: relative;
+  width: 100%;
+  top: 100px;
+}
+.footer
+{
+  position: relative;
+  width: 100%;
+  top: 100px;
 }
