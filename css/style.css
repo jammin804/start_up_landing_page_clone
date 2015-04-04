@@ -67,36 +67,6 @@ table {
   border-spacing: 0;
 }
 
-/***************
-*              *
-*    General   *
-*              *
-****************/
-
-body
-{
-
-}
-div
-{
-  width: 6.25em; /*100px / 16px*/
-  height: 6.25em; /*100px / 16px*/
-}
-
-/***************
-*              *
-*    Fonts     *
-*              *
-****************/
-
-.links
-{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #838994;
-  letter-spacing: 0.03em;
-  -webkit-font-smoothing: antialiased;
-}
 
 /***************
 *              *
@@ -110,20 +80,18 @@ div
   top: 0;
   width: 100%;
 }
+.content {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 970px;
+}
 .top-navigation
 {
   background-color: #fff;
 }
-.content
-{
-  padding: 0 15px;
-}
 .top-navigation > .content
 {
-  border: 1px solid #000;
-  width: 60.625rem; /*970px / 16px*/
-  height: 4.375rem; /*70px / 16px*/
-  margin: 0 auto;
+  height: 70px;
 }
 .top-navigation .logo
 {
@@ -132,36 +100,82 @@ div
 .top-navigation .links
 {
   float: right;
+  font-family: 'Roboto', sans-serif;
+  color: #838994;
+  font-size: 16px;
   margin-top: 25px;
+  -webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li
 {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 .top-navigation .links .active
 {
   color: #4c5058;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .top-navigation .links li:hover
 {
   color: #4c5058;
   cursor: pointer;
-  -webkit-transition: color 1s ease;
-  -o-transition: color 1s ease;
-  transition: color 1s ease;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
-/*Intro Image*/
+
+/*********************
+*                    *
+*  Background Intro  *
+*                    *
+*********************/
+
 .intro
 {
-  position: relative;
-  width: 100%;
-  height: 615px;
-  top: 100px;
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*top: 100px;*/
+  background-image: url("http://thinkful-ed.github.io/karma-clone/img/first-background.jpg");
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
 }
-.feat
+.intro .content
+{
+  margin-top: 200px;
+}
+.intro .content h1,
+.intro .content h3
+{
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+.intro .content h1
+{
+  font-size: 3.125rem;
+  margin-top: 17.5rem;
+}
+.intro .content h3
+{
+  font-size: 1.563rem;
+  margin-top: 1.25rem;
+}
+/*.intro .content h1,
+.intro .content h3
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+}*/
+
+/*.feat
 {
   position: relative;
   width: 100%;
@@ -172,4 +186,4 @@ div
   position: relative;
   width: 100%;
   top: 100px;
-}
+}*/
