@@ -97,16 +97,23 @@ table {
 {
   height: 70px;
 }
+.top-navigation .links,
+.intro .content h1,
+.intro .content h3,
+.feat h1
+{
+  font-family: 'Roboto', sans-serif;
+}
 .top-navigation .links
 {
   float: right;
-  font-family: 'Roboto', sans-serif;
   color: #838994;
   font-size: 16px;
   margin-top: 25px;
   -webkit-font-smoothing: antialiased;
 }
-.top-navigation .links li
+.top-navigation .links li,
+.feat .info li
 {
   display: inline-block;
   margin-left: 25px;
@@ -134,11 +141,8 @@ table {
 
 .intro
 {
-  /*position: absolute;*/
-  /*width: 100%;*/
-  /*top: 100px;*/
   background-image: url("http://thinkful-ed.github.io/karma-clone/img/first-background.jpg");
-  background-position: 0 bottom;
+  background-position: center bottom;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -190,13 +194,55 @@ table {
   transition: color 0.5s ease;
 }
 
-/*.feat
+/*************
+*            *
+*  Features  *
+*            *
+*************/
+.feat
 {
-  position: relative;
-  width: 100%;
-  top: 100px;
+  margin-top: 135px;
 }
-.footer
+.feat h2
+{
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+.feat .devices
+{
+  float: left;
+  width: 33.33333%;
+  display: inline-block;
+  /*styles to assist with debugging*/
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 4em;
+}
+.flexbox
+{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+}
+.feat .devices img
+{
+  width: 127px;
+  height: 127px;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+.feat
+/*.footer
 {
   position: relative;
   width: 100%;
