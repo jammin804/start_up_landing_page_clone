@@ -101,7 +101,8 @@ table {
 .intro .content h1,
 .intro .content h3,
 .feat h2,
-.feat .devices .caption h3
+.feat .devices .caption h3,
+.social h5
 {
   font-family: 'Roboto', sans-serif;
 }
@@ -212,28 +213,18 @@ table {
 }
 .feat .devices
 {
-  float: left;
-  width: 33.33333%;
-  display: inline-block;
-  /*styles to assist with debugging*/
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 4em;
+  margin: 0 auto;
 }
-.flexbox
+.feat .feat_icon
 {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: -o-box;
-  display: box;
+  display: inline-block;
 }
+.feat .caption > h3
+{
+  text-align: center;
+  margin-left: 45px;
+}
+
 .feat .devices img
 {
   width: 127px;
@@ -254,21 +245,54 @@ table {
 *   Footer   *
 *            *
 *************/
-.footer
+.social
 {
   position: relative;
   width: 100%;
   top: 100px;
+  margin-bottom: 300px;
 }
-.footer .content
+.social .content
 {
-  border-top: 1px solid #000;
   margin-top: 175px;
 }
-.footer .content h4
+.social .content h5
 {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
   margin-top: 25px;
+}
+.social .icons > li
+{
+  border: 1px solid #eaebec;
+  border-radius: 1.25rem;
+  display: inline-block;
+  height: 2.5rem;
+  margin: 1.25rem 5px;
+  padding: 0.625rem 0;
+  text-align: center;
+  width: 2.5rem;
+}
+.social .twitter
+{
+  color: #55acee;
+}
+.social .facebook
+{
+  color: #4C66A4;
+}
+.social .instagram
+{
+  color: #3F729B;
+}
+.icons
+{
+  display: inline-block;
+  margin-left: 390px;
+}
+.copy
+{
+  color: #A8A9A6;
+  margin-left: 400px;
 }
